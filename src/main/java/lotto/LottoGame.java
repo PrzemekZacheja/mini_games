@@ -1,15 +1,14 @@
 package lotto;
 
+import interfaces.Game;
+
 import java.util.*;
 
-public class LottoGame {
+import static lotto.LottoMessageProvider.*;
 
-    private static final String JESZCZE_RAZ = "liczba z poza zakresu 1-99, spróbuj jeszcze raz";
-    private static final String CZY_WYGRALES = "Sprawdzam czy wygrałeś: ... ";
-    private static final String WYBRALES_LICZBY = "wybrałeś liczby: ";
-    private static final String WYLOSOWANE_LICZBY_TO = "Wylosowane liczby to: ";
-    private static final String GRATULACJE = "Gratulacje";
-    private static final String SPROBUJ_JESZCZE_RAZ = "Spróbuj jeszcze raz";
+public class LottoGame implements Game {
+
+
     private static final int MAX_ZAKRES = 99;
     private static final int MIN_ZAKRES = 1;
     private static Random rand = new Random();
